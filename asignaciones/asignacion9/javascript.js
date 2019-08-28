@@ -14,7 +14,7 @@ function populateHeader(jsonObj) {
     recomendados.appendChild(myH1);
 
     var myH2 = document.createElement('h2');
-    myH1.textContent = jsonObj['Municipio'];
+    myH2.textContent = jsonObj['Municipio'];
     recomendados.appendChild(myH2);
 
     var myPara = document.createElement('p');
