@@ -14,8 +14,7 @@ addEventListener usando el parámetro load. */
  console.log (weatherData);
  document.getElementById ('cc-temp'). innerHTML = weatherData.main.temp;
 
- let icon =
-"http://openweathermap.org/img/wn/"+weatherData.weather[font.icon+".png"];
+ let icon ="http://openweathermap.org/img/wn/"+weatherData.weather[font.icon+".png"];
  let desc = weatherData.weather [0] .description;
  document.getElementById ('cc-img'). setAttribute ('src', icono);
  document.getElementById ('cc-img'). setAttribute ('alt', desc);
