@@ -1,4 +1,4 @@
-var requestURL = 'https://zarraga555.github.io/TecnologiaWeb1/Asignaciones/asignacion10/js/bolivia.json';
+var requestURL = 'https://github.com/ArgotePazRamiro/Repositorio/blob/master/Llajtatour/json/recomendados.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -9,10 +9,10 @@ request.onload = function(){
 }
 
 function datos(jsonObj){
-    var contenido = jsonObj['ciudades'];
+    var contenido = jsonObj['recomendados'];
     
-    if(contenido[0].nombre == 'cochabamba'){
-        var myartculo = document.getElementById('section-info-content')
+    if(contenido[0].Lugar == 'Los Molinos'){
+        var myartculo = document.createElement('h1')
         var titulociudad = document.createElement('h2');
         var historiaciudad = document.createElement('p');
 
@@ -21,9 +21,5 @@ function datos(jsonObj){
 
         myartculo.appendChild(titulociudad);
         myartculo.appendChild(historiaciudad);
-
-
     }
-
-    
 }
