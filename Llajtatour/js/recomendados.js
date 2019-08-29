@@ -23,13 +23,13 @@ function showplace(jsonObj, a) {
             myH1.textContent = lugares[i].Lugar;
             myH2.textContent = lugares[i].Municipio;
             myPara.textContent = lugares[i].Descripcion;
+
+            myArticle.appendChild(myH1);
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara);
+
+            information.appendChild(myArticle);
         }
-
-        myArticle.appendChild(myH1);
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara);
-
-        information.appendChild(myArticle);
     }
 
 }
@@ -112,7 +112,7 @@ openpopup13.addEventListener('click', function () {
     showplace(lugar, 'Parque Nacional Tunari');
 });
 
-closepopup.addEventListener('click', function(){
-    document.querySelector('section').innerHTML='';
+closepopup.addEventListener('click', function () {
+    document.querySelector('section').innerHTML = '';
     overlay.classList.remove('active')
 });
