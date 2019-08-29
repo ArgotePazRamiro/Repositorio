@@ -2,9 +2,9 @@ var OpenPopUp = document.getElementById("open-popup"),
     overlay = document.getElementById("overlay"),
     popup = document.getElementById("popup"),
     closePopup = document.getElementById("close-popup");
-var requestURL = 'https://github.com/ArgotePazRamiro/Repositorio/blob/master/Llajtatour/json/recomendados.json';
-var request = new XMLHttpRequest();
 var information = document.querySelector('section');
+var requestURL = 'https://argotepazramiro.github.io/Repositorio/Llajtatour/json/recomendados.json';
+var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
@@ -20,8 +20,8 @@ function showplace(jsonObj, a) {
             var myH2 = document.createElement('h2');
             var myPara = document.createElement('p');
 
-            myH1.textContent = lugares[i].Lugar;
-            myH2.textContent = lugares[i].Municipio;
+            myH1.textContent = lugares[i].Municipio;
+            myH2.textContent = lugares[i].Lugar;
             myPara.textContent = lugares[i].Descripcion;
 
             myArticle.appendChild(myH1);
@@ -37,19 +37,19 @@ openpopup1.addEventListener('click', function () {
     var lugar = request.response;
     request.onload = lugar;
     overlay.classList.add('active');
-    showplace(lugar, 'Los Molinos');
+    showplace(lugar, 'Laguna Corani');
 });
 openpopup2.addEventListener('click', function () {
     var lugar = request.response;
     request.onload = lugar;
     overlay.classList.add('active');
-    showplace(lugar, 'Laguna Corani');
+    showplace(lugar, 'Puente del Libertador en Mizque');
 });
 openpopup3.addEventListener('click', function () {
     var lugar = request.response;
     request.onload = lugar;
     overlay.classList.add('active');
-    showplace(lugar, 'Puente del Libertador en Mizque');
+    showplace(lugar, 'Los Molinos');
 });
 openpopup4.addEventListener('click', function () {
     var lugar = request.response;
