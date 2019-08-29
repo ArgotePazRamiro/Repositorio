@@ -8,10 +8,6 @@ var information = document.querySelector('section');
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function(){
-    var contenidomostrar = request.response;
-    datos(contenidomostrar);
-}
 
 
 function showplace(jsonObj, a) {
