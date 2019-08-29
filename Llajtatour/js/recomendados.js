@@ -112,7 +112,7 @@ openpopup13.addEventListener('click', function () {
     showplace(lugar, 'Parque Nacional Tunari');
 });
 
-closePopup.addEventListener('click', function(){
+closepopup.addEventListener('click', function(){
     document.querySelector('section').innerHTML='';
     overlay.classList.remove('active')
 });

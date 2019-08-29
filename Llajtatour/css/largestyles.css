@@ -210,7 +210,7 @@ footer {
     width: 1000px;
 }
 
-.popup .close-popup{
+.popup .closepopup{
     font-size: 16px;
     line-height: 16px;
     display: block;
@@ -219,6 +219,6 @@ footer {
     transition: .3s ease all;
 }
 
-.popup .close-popup:hover{
+.popup .closepopup:hover{
     color: #000000;
 }
