@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recomendados</title>
+    <title>Recomendaciones</title>
     <link rel="icon" type="image/png" href="images/llajtatoursfon.png" />
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/largestyles.css">
     <link rel="stylesheet" href="css/mediumstyles.css">
     <link rel="stylesheet" href="css/smallstyles.css">
-    <link rel = "stylesheet" href = "css/fonts/fontello-450542f5/css/fontello.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/header2.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/main.js"></script>
 </head>
-
 <body>
     <!--Cabecera-->
-    <header class="header">
-        <div class="wrapper">
-            <div class="logo">
-                Llajtatour
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#"><span class="icon-home"></span> Inicio</a></li>
-                    <li><a href="#"><span class="icon-newspaper"></span> Provincias</a></li>
-                    <li><a href="#"><span class="icon-earth"></span> Recomendaciones</a></li>
-                    <li><a href="#"><span class="icon-camera"></span> Galeria</a></li>
-                    <li><a href="#"><span class="icon-question"></span> Acerca De</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="inicio.html"><span class="icon-home"></span>Inicio</a></li>
+				<li class="submenu">
+                    <a href="#">
+                        <span class="icon-earth"></span>Provincias<span class="caret icon-circle-down"></span>
+                    </a>
+                    <ul class="children">
+                        <li><a href="valle-alto.html">Valle Alto <span class="icon-dot"></span></a></li>
+                        <li><a href="valle-bajo.html">Valle Bajo <span class="icon-dot"></span></a></li>
+                        <li><a href="chapare.html">Chapare<span class="icon-dot"></span></a></li>
+                    </ul>
+                </li>
+				<li class="submenu">
+					<a href="#">
+						<span class="icon-camera"></span>Galeria<span class="caret icon-circle-down"></span>
+					</a>
+					<ul class="children">
+						<li><a href="g_fotos.html">Fotografias <span class="icon-dot"></span></a></li>
+						<li><a href="#">Videos <span class="icon-dot"></span></a></li>
+					</ul>
+				</li>
+                <li><a href="inicio.html"><span class="icon-newspaper"></span>Recomendaciones</a></li>
+                <li><a href="inicio.html"><span class="icon-question"></span>Acerca De</a></li>
+			</ul>
+		</nav>
+	</header>
     <!--Principal-->
     <main>
         <div class="contenedor">
             <div class="contenedor_tarjeta">
                 <a id="openpopup1" href="#">
                     <figure id="tarjeta">
-                        <img src="images/corani-png.png" class="frontal" alt="">
+                        <img src="images/corani_png.png" class="frontal" alt="">
                         <figcaption class="trasera">
                             <h2 class="titulo">Corani</h2>
                             <hr>
@@ -58,7 +71,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup2" href="#">
                     <figure id="tarjeta">
-                        <img src="images/puente del libertador mizque.png" class="frontal" alt="">
+                        <img src="images/puente_del_libertador_mizque.png" class="frontal" alt="">
                         <figcaption class="trasera">
                             <h2 class="titulo">Puente del Libertador en Mizque</h2>
                             <hr>
@@ -89,7 +102,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup4" href="#">
                     <figure id="tarjeta">
-                        <img src="images/la fuente del amor tiraque.png" class="frontal" alt="">
+                        <img src="images/la_fuente_del_amor_tiraque.png" class="frontal" alt="">
                         <figcaption class="trasera">
                             <h2 class="titulo">La Fuente del Amor</h2>
                             <hr>
@@ -105,7 +118,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup5" href="#">
                     <figure id="tarjeta">
-                        <img src="images/cavernas de repechon.png" class="frontal" alt="">
+                        <img src="images/cavernas_de_repechon.png" class="frontal" alt="">
                         <figcaption class="trasera">
                             <h2 class="titulo">Cavernas del Repechón</h2>
                             <hr>
@@ -121,7 +134,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup6" href="#">
                     <figure id="tarjeta">
-                        <img src="images/la angostura cochabamba.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/la_angostura_cochabamba.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo">La Angostura</h2>
                             <hr>
@@ -137,7 +150,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup7" href="#">
                     <figure id="tarjeta">
-                        <img src="images/convento san jose tarata.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/convento_san_jose_tarata.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo">Convento de San José en Tarata</h2>
                             <hr>
@@ -153,7 +166,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup8" href="#">
                     <figure id="tarjeta">
-                        <img src="images/tipnis2.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/tipnis-png.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo"> El Tipnis</h2>
                             <hr>
@@ -185,7 +198,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup10" href="#">
                     <figure id="tarjeta">
-                        <img src="images/yunga pampa norte de tiquipaya.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/yunga_pampa_norte_de_tiquipaya.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo"> Yunga Pampa, en Tiquipaya</h2>
                             <hr>
@@ -201,7 +214,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup11" href="#">
                     <figure id="tarjeta">
-                        <img src="images/parque ecoturistico san isidro sacaba.png" class="frontal"
+                        <img src="images/parque_ecoturistico_san_isidro_sacaba.png" class="frontal"
                             alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo"> Parque Ecoturístico San Isidro, en Sacaba</h2>
@@ -218,7 +231,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup12" href="#">
                     <figure id="tarjeta">
-                        <img src="images/cristo concordia.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/cristo_concordia.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo"> El Cristo de la Concordia</h2>
                             <hr>
@@ -234,7 +247,7 @@
             <div class="contenedor_tarjeta">
                 <a id="openpopup13" href="#">
                     <figure id="tarjeta">
-                        <img src="images/parque nacional tunari.png" class="frontal" alt="Imagen del Tipnis">
+                        <img src="images/parque_nacional_tunari.png" class="frontal" alt="Imagen del Tipnis">
                         <figcaption class="trasera">
                             <h2 class="titulo">Parque Nacional Tunari</h2>
                             <hr>
@@ -249,14 +262,11 @@
         </div>
         <div class="overlay" id="overlay">
             <div class="popup" id="popup">
-                <a href="#" id="closepopup" class="closepopup"><i class="icon-cancel"></i></a>
+                <a href="#" id="closepopup" class="closepopup"><i class="icon-exit"></i></a>
                 <section></section>
             </div>
         </div>
-
-        
-
-    </main>
+    </main>    
     <!--Pie de pagina-->
     <footer>
         <div class="copy">
@@ -267,10 +277,8 @@
             </script>
             <p>Todos los derechos de edición <span class="icon-home" aria-hidden="true"></span> por</p>
             <p class="negrita">Llajtatour | Cochabamba</p>
-            <a href="https://www.google.com/">google</a>
         </div>
         <script src="js/recomendados.js"></script>
     </footer>
 </body>
-
 </html>
